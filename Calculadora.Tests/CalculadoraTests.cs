@@ -23,6 +23,14 @@ namespace Calculadora.Tests
             //Teste Classe Multiplicar
             //DoisNumeros
             [Test]
+            public void DeveMultiplicarDoisNumeros()
+            {
+                var sut = new CalculadoraSimples();
+
+                var resultado = sut.Multiplicar(5, 3);
+
+                Assert.That(resultado, Is.EqualTo(15));
+            }
         }
     }
 }
